@@ -1,0 +1,20 @@
+{
+    "name": "blacklist/composer-packag",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alexsandr Shevchenko",
+            "email": "shevch19944@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "scripts/"
+        }
+    }
+    
+}
