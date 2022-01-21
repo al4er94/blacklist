@@ -10,11 +10,11 @@ class Blacklists{
 
     public function save($blacklist, $id){
         try{
-            if(!self::checkAdvertisers($id)){
+            if (!self::checkAdvertisers($id)){
                 throw new Exception("Advertiser whith id=$id nor found"); 
             }
             
-            if(!self::checkSrtingFormat($blacklist)){
+            if (!self::checkSrtingFormat($blacklist)){
                 throw new Exception("blacklist does not match format"); 
             }
             
@@ -23,9 +23,9 @@ class Blacklists{
             $publishIdArr = array();
             $sitesIdArr = array();
             foreach ($blacklitArr as $blacklistAtr){
-                if(strpos($blacklistAtr, 's') !== false){
+                if (strpos($blacklistAtr, 's') !== false){
                     $sitesIdArr[] = str_replace('s', '', $blacklistAtr);
-                }else if(strpos($blacklistAtr, 'p') !== false){
+                } else if(strpos($blacklistAtr, 'p') !== false){
                     $publishIdArr[] = str_replace('p', '', $blacklistAtr);
                 }
             }
@@ -61,6 +61,11 @@ class Blacklists{
         } catch (Exception $ex) {
             echo $ex->getMessage();
         }
+    }
+    
+    public function tetst(Type $var = null)
+    {
+      
     }
 
     // Проверка существования рекламодателя
