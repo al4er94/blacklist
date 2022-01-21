@@ -59,9 +59,7 @@ class Blacklists{
             
             
         } catch (Exception $ex) {
-
             echo $ex->getMessage();
-        
         }
     }
     
