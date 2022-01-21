@@ -63,10 +63,6 @@ class Blacklists{
         }
     }
     
-    public function tetst(Type $var = null)
-    {
-      
-    }
 
     // Проверка существования рекламодателя
     public static function checkAdvertisers($id){
